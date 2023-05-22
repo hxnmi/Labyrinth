@@ -1097,15 +1097,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4527894767557372900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5217bc084459cb42b5d4d2aaa8aa37b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ca94b5ab96a6ff4d8ecf6fdec03f212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 0}
-  muteToggle: {fileID: 4527894767265792625}
-  bgmSlider: {fileID: 4527894767270735172}
-  sfxSlider: {fileID: 4527894768962787119}
-  bgmVolText: {fileID: 4527894767169827321}
-  sfxVolText: {fileID: 4527894767534974603}
+  muteToggle: {fileID: 0}
+  bgmSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  bgmVolText: {fileID: 0}
+  sfxVolText: {fileID: 0}
 --- !u!1 &4527894767584907817
 GameObject:
   m_ObjectHideFlags: 0

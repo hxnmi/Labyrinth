@@ -7,12 +7,17 @@ public class SceneLoader : MonoBehaviour
 {
     public void SceneLoad(string sceneName)
     {
-        SceneManager.LoadScene("sceneName");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void ReloadCurrentScene()
     {
-        var currentSceneName = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentSceneName.name);
+        var currentScene = SceneManager.GetActiveScene();
+
+        SceneManager.LoadScene(currentScene.name);
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

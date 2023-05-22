@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2310306602206113329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d96eae5353f249b4485f672cae7722ea, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7f83ef27cdb624aa04a236ef985bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bgm: {fileID: 2310306602518888184}
@@ -218,7 +218,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c65cbee0ca58f0043ad0f91d25877971, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7e23f87ae6923fc40815e6685117f3d0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1

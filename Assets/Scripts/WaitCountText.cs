@@ -11,4 +11,11 @@ public class WaitCountText : MonoBehaviour
     {
         text.text = "wait: " + value + "s";
     }
+
+    public void UpdatePlayText(int value)
+    {
+        text.text = "Ready?\n" + value + "s";
+        if (value == 0)
+            text.text = "GO!";
+    }
 }
