@@ -140,9 +140,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -1178,7 +1186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 895603069400382160, guid: d92908a9462ded9438dca84d6b063bc6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 895603069400382161, guid: d92908a9462ded9438dca84d6b063bc6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1406,6 +1414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &333858832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 895603069400382160, guid: d92908a9462ded9438dca84d6b063bc6, type: 3}
+  m_PrefabInstance: {fileID: 333858829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &386569159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1684,6 +1697,7 @@ GameObject:
   - component: {fileID: 450291422}
   - component: {fileID: 450291424}
   - component: {fileID: 450291423}
+  - component: {fileID: 450291425}
   m_Layer: 5
   m_Name: Score Text (TMP)
   m_TagString: Untagged
@@ -1704,7 +1718,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 104668658347572902}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1808,6 +1822,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450291421}
   m_CullTransparentMesh: 1
+--- !u!114 &450291425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450291421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c6c0ec99339904ba7e63162b49b60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 450291423}
 --- !u!1001 &451633303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2031,9 +2058,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -2681,9 +2716,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -2692,7 +2735,7 @@ PrefabInstance:
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: baseAnimation
       value: 
-      objectReference: {fileID: 11400000, guid: 0da0bd2795309854087d4ba1583b47f8, type: 2}
+      objectReference: {fileID: 11400000, guid: 37b13e2295594ab44848c354e83f80c3, type: 2}
     - target: {fileID: 7268022751275002509, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2999,9 +3042,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -3010,7 +3061,7 @@ PrefabInstance:
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: baseAnimation
       value: 
-      objectReference: {fileID: 11400000, guid: 0da0bd2795309854087d4ba1583b47f8, type: 2}
+      objectReference: {fileID: 11400000, guid: 37b13e2295594ab44848c354e83f80c3, type: 2}
     - target: {fileID: 7268022751275002509, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3534,6 +3585,7 @@ MonoBehaviour:
   gameOverEvent: {fileID: 11400000, guid: ee6ba0a2b0b525b489ae56e6ceb4b41c, type: 2}
   playerWinEvent: {fileID: 11400000, guid: 9f78418bb863a5446a8fa24d70b65737, type: 2}
   optionsPanel: {fileID: 4586225564855837404}
+  nextLevel: {fileID: 333858832}
   OnStart:
     m_PersistentCalls:
       m_Calls:
@@ -3574,6 +3626,22 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 0c2363ca38ec5fb409ec18f6076b84ec, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  coin: 0
+  OnScoreUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 450291425}
+        m_TargetAssemblyTypeName: ScoreText, Assembly-CSharp
+        m_MethodName: UpdateScore
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3865,7 +3933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198712451}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -22, y: 100, z: 25}
+  m_LocalPosition: {x: -8, y: 70, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3918,7 +3986,7 @@ RectTransform:
   m_Children:
   - {fileID: 2101749472}
   m_Father: {fileID: 104668658347572902}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4219,7 +4287,7 @@ RectTransform:
   - {fileID: 231318473}
   - {fileID: 1806035978}
   m_Father: {fileID: 104668658347572902}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5483,9 +5551,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -5683,6 +5759,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnGetCoin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1086229401}
+        m_TargetAssemblyTypeName: PlayManager, Assembly-CSharp
+        m_MethodName: AddCoin
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1903785428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5842,9 +5933,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -6175,9 +6274,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
       value: Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: coinData
@@ -6303,6 +6410,141 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3242689633994712441, guid: 1ca5c5b2d2aad1c49a7f4b9698d39eb8, type: 3}
   m_PrefabInstance: {fileID: 2041124335}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2049464475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049464476}
+  - component: {fileID: 2049464478}
+  - component: {fileID: 2049464477}
+  m_Layer: 5
+  m_Name: Hint Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2049464476
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049464475}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5625, y: 0.5625, z: 0.5625}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 104668658347572902}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 190, y: -55}
+  m_SizeDelta: {x: 600, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2049464477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049464475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Touch & Drag to move Camera!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: edf3d72ce47ab4a46bd345a1a1bc8ded, type: 2}
+  m_sharedMaterial: {fileID: -3072899947598757323, guid: edf3d72ce47ab4a46bd345a1a1bc8ded, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4280098077
+  m_fontColor: {r: 0.11320752, g: 0.11267352, b: 0.11267352, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 17
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2049464478
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049464475}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2060349696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6642,6 +6884,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2049464476}
   - {fileID: 450291422}
   - {fileID: 5993696681237443171}
   - {fileID: 1201093796}
@@ -7869,7 +8112,7 @@ RectTransform:
   m_Children:
   - {fileID: 4586225565332045641}
   m_Father: {fileID: 104668658347572902}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9569,7 +9812,7 @@ RectTransform:
   - {fileID: 5993696680751870525}
   - {fileID: 5993696681578378531}
   m_Father: {fileID: 104668658347572902}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -10026,8 +10269,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1947864540}
     m_Modifications:
+    - target: {fileID: 7268022750539671828, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_Name
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268022751275002506, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
+      propertyPath: m_TagString
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
@@ -10037,7 +10288,7 @@ PrefabInstance:
     - target: {fileID: 7268022751275002508, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: baseAnimation
       value: 
-      objectReference: {fileID: 11400000, guid: 0da0bd2795309854087d4ba1583b47f8, type: 2}
+      objectReference: {fileID: 11400000, guid: 37b13e2295594ab44848c354e83f80c3, type: 2}
     - target: {fileID: 7268022751275002509, guid: 95e64f0af6cb725409a19386ac5f1d94, type: 3}
       propertyPath: m_RootOrder
       value: 0

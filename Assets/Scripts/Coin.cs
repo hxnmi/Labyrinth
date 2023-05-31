@@ -17,4 +17,14 @@ public class Coin : MonoBehaviour
         if (baseAnimation != null)
             baseAnimation.Animate(visual);
     }
+
+    public void Collected()
+    {
+        GetComponent<Collider>().enabled = false;
+    }
+
+    public void SelfDestruct()
+    {
+        Destroy(this.gameObject);
+    }
 }

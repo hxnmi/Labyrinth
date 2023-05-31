@@ -11,10 +11,13 @@ public class PlayManager : MonoBehaviour
     [SerializeField] CustomEvent gameOverEvent;
     [SerializeField] CustomEvent playerWinEvent;
     [SerializeField] GameObject optionsPanel;
+    [SerializeField] GameObject nextLevel;
     public UnityEvent OnStart = new UnityEvent();
-    int coin = 100;
     public UnityEvent WinSound;
     public UnityEvent GameOverSound;
+    [SerializeField] private int coin;
+    public UnityEvent<int> OnScoreUpdate;
+
     private void OnEnable()
     {
         gameOverEvent.OnInvoked.AddListener(GameOver);
@@ -33,19 +36,26 @@ public class PlayManager : MonoBehaviour
         finishedText.text = "You Failed";
         finishedCanvas.SetActive(true);
         optionsPanel.gameObject.SetActive(false);
+        nextLevel.gameObject.SetActive(false);
         GameOverSound.Invoke();
     }
 
     public void PlayerWin()
     {
-        finishedText.text = "You Win!\nScore:";
+        finishedText.text = "You Win!\nScore: " + GetScore();
         finishedCanvas.SetActive(true);
         optionsPanel.gameObject.SetActive(false);
+        nextLevel.gameObject.SetActive(true);
         WinSound.Invoke();
     }
 
+    public void AddCoin(int CoinData)
+    {
+        this.coin += CoinData;
+        OnScoreUpdate.Invoke(GetScore());
+    }
     private int GetScore()
     {
-        return coin * 10;
+        return coin;
     }
 }
